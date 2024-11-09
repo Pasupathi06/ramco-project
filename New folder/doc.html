@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramco Cements</title>
+<style>
+/* CSS styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif; line-height: 1.6;
+color: #333;
+}
+header {
+background-color: #555; color: #fff;
+padding: 1em 0;
+}
+header nav { display: flex;
+justify-content: space-between; align-items: center;
+width: 90%; margin: auto;
+}
+header ul {
+list-style: none; display: flex;
+}
+header ul li { margin-left: 1em;
+}
+header ul li a { color: #fff;
+text-decoration: none;
+}
+section {
+
+padding: 2em; width: 90%; margin: auto;
+}
+#home {
+text-align: center; padding-top: 2em;
+}
+button {
+background-color: #005cbf; color: #fff;
+border: none; padding: 0.5em 1em; cursor: pointer; border-radius: 4px;
+}
+.product-list { display: flex; gap: 1em;
+}
+.product-item {
+border: 1px solid #ddd; padding: 1em;
+width: 30%;
+text-align: center; border-radius: 5px;
+}
+footer {
+background-color: #555; color: #fff;
+text-align: center; padding: 1em;
+}
+#contactForm { display: flex;
+flex-direction: column;
+}
+#contactForm input, #contactForm textarea { margin: 0.5em 0;
+padding: 0.5em; border: 1px solid #ccc; border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h1>Ramco Cements</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home">
+<h2>Welcome to Ramco Cements</h2>
+<p>Providing quality cement solutions to build a strong and sustainable future.</p>
+<button onclick="learnMore()">Learn More</button>
+</section>
+
+<section id="products">
+<h2>Our Products</h2>
+<div class="product-list">
+<div class="product-item">
+<h3>Ordinary Portland Cement</h3>
+<p>High-quality cement for all types of construction.</p>
+</div>
+<div class="product-item">
+<h3>Portland Pozzolana Cement</h3>
+<p>Eco-friendly, durable cement with a blend of natural materials.</p>
+</div>
+<div class="product-item">
+<h3>Ready Mix Concrete</h3>
+<p>Pre-mixed concrete for time-saving and efficient construction.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2>About Ramco Cements</h2>
+<p>Founded in 1960, Ramco Cements is committed to delivering top-quality cement for a sustainable future.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form id="contactForm" onsubmit="submitForm(event)">
+<label for="name">Name:</label>
+
+<input type="text" id="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+
+<label for="message">Message:</label>
+<textarea id="message" required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+<div id="successMessage"></div>
+</section>
+
+<footer>
+<p>&copy; 2023 Ramco Cements. All rights reserved.</p>
+</footer>
+
+<script>
+// JavaScript functions function learnMore() {
+alert("Explore Ramco Cements' products and services to learn more!");
+
+us!";
+
+}
+function submitForm(event) { event.preventDefault();
+document.getElementById("successMessage").textContent = "Thank you for contacting
+
+document.getElementById("contactForm").reset();
+
+}
+</script>
+</body>
+</html>
